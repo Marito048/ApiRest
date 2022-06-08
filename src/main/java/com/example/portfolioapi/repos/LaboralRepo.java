@@ -13,8 +13,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface LaboralRepo extends CrudRepository<LaboralModel, Integer> {
 
-    //public Optional<LaboralModel> findById(int id);
 
-    //public void deleteById(long id);
     
 }

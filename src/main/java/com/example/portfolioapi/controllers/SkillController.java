@@ -50,18 +50,7 @@ public class SkillController {
         }
     }
 
-    /*@DeleteMapping("/{id}")
-    public ResponseEntity eliminarPorId(@PathVariable(value = "id") int id) {
-        ResponseEntity response = null;
-        if(skillService.getById(id) == null) {
-            response = new ResponseEntity(HttpStatus.NOT_FOUND);
-        }
-        else{
-            skillService.delete(id);
-            response= ResponseEntity.ok("SE ELIMINÓ LA EDUCACIÓN CON ID " + id);
-        }
-        return response;
-    }*/
+   
 
     @DeleteMapping("/{id}")
     public ResponseEntity<SkillModel> delete(@PathVariable int id) {

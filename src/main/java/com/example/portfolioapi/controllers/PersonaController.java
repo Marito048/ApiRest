@@ -52,10 +52,7 @@ public class PersonaController {
         }
     }
 
-    //@DeleteMapping("/{id}")
-    //public void delete(@PathVariable int id) {
-    //    PersonaService.delete(id);
-    //}
+    
     @DeleteMapping("/{id}")
     public ResponseEntity<PersonaModel> delete(@PathVariable int id) {
         boolean ok = personaService.delete(id);

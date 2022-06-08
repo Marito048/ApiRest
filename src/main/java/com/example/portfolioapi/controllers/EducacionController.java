@@ -51,18 +51,7 @@ public class EducacionController {
         }
     }
 
-    //@DeleteMapping("/{id}")
-    //public ResponseEntity eliminarPorId(@PathVariable(value = "id") int id) {
-    //    ResponseEntity response = null;
-    //    if(educacionService.getById(id) == null) {
-    //        response = new ResponseEntity(HttpStatus.NOT_FOUND);
-    //    }
-    //    else{
-    //        educacionService.delete(id);
-    //        response= ResponseEntity.ok("SE ELIMINÓ LA EDUCACIÓN CON ID " + id);
-    //    }
-    //    return response;
-    //}
+    
     @DeleteMapping("/{id}")
     public ResponseEntity<EducacionModel> delete(@PathVariable int id) {
         boolean ok = educacionService.delete(id);

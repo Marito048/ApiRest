@@ -6,13 +6,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/*
-    `idred` INT(11) NOT NULL AUTO_INCREMENT,
-    `nombre` VARCHAR(50) NULL DEFAULT NULL,
-    `url` VARCHAR(2000) NULL DEFAULT NULL,
-    `fotourl` VARCHAR(200) NULL DEFAULT NULL,
-    `persona` INT(11) NULL DEFAULT NULL,
-*/
 
 
 

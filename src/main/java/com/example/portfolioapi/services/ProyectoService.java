@@ -31,7 +31,7 @@ public class ProyectoService {
     }
 
     public ProyectoModel save(ProyectoModel proyecto) {
-        return proyectoRepo.save(proyecto); // crear o actualizar
+        return proyectoRepo.save(proyecto); 
     }
     public boolean delete(int id) {
         try {

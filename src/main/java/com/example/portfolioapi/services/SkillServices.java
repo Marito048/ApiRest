@@ -29,12 +29,10 @@ public class SkillServices {
         }
     }
     public SkillModel save( SkillModel skill) {
-        return skillRepo.save(skill); // crear o actualizar
+        return skillRepo.save(skill); 
     }
 
- //   public void delete(int id) {
- //       skillRepo.deleteById(id);
- //   }
+
  public boolean delete(int id) {
     try {
         skillRepo.deleteById(id);

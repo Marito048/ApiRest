@@ -9,10 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-/**
- *
- * @author JLG
- */
+
 @Service
 public class LaboralService {
     
@@ -35,12 +32,10 @@ public class LaboralService {
     }
     
     public LaboralModel save(LaboralModel laboral) {
-        return expeRepo.save(laboral); // crea o actualiza
+        return expeRepo.save(laboral); 
     }
     
-    //public void delete(long id){
-    //    expeRepo.deleteById(id);
-    //}
+ 
     public boolean delete(int id) {
         try {
             expeRepo.deleteById(id); 

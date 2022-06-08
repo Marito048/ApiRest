@@ -32,7 +32,7 @@ public class PortfolioapiApplication {
 				.antMatchers(HttpMethod.POST, "/**").authenticated()
 				.antMatchers(HttpMethod.PUT, "/**").authenticated()
 				.antMatchers(HttpMethod.DELETE, "/**").authenticated();
-				//.anyRequest().authenticated();
+				
 		}
 	}
 
